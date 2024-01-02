@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import React, {
   useEffect,
   useRef,
@@ -96,9 +97,7 @@ export const TodoItem: React.FC<Props> = ({ todo }) => {
           checked={completed}
           onChange={() => handleCompletedTodo(id)}
         />
-        <label
-          onDoubleClick={() => setIsEditStatus(true)}
-        >
+        <label onDoubleClick={() => setIsEditStatus(true)}>
           {title}
         </label>
         <button
